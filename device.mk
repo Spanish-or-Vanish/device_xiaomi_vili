@@ -28,6 +28,9 @@ $(call soong_config_set_bool,camera,override_format_from_reserved,true)
 PRODUCT_PACKAGES += \
     init.xiaomi.goodixfp.rc
 
+# MiuiCamera
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-vili/device.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \

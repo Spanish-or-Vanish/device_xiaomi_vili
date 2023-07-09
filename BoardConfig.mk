@@ -51,6 +51,9 @@ BOOT_KERNEL_MODULES := \
 
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 
+# MiuiCamera
+-include device/xiaomi/miuicamera-vili/BoardConfig.mk
+
 # Partitions
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 
