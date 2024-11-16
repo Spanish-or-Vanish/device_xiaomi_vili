@@ -29,3 +29,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=vili \
     SystemDevice=vili \
     SystemName=vili
+
+# Rom Specific Flags
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
+TARGET_ENABLE_BLUR := false
+WITH_GMS := true
+RISING_MAINTAINER=swiitchOFF
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 888" \
+    RisingMaintainer="swiitchOFF"	
