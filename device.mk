@@ -34,6 +34,12 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
+# Private keys
+-include vendor/infinity-priv/keys/keys.mk
+
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # RRO Overlays
 PRODUCT_PACKAGES += \
     ViliWifiOverlay

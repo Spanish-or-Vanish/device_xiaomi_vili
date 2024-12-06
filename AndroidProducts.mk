@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/lineage_vili.mk
+	$(LOCAL_DIR)/infinity_vili.mk
 
 COMMON_LUNCH_CHOICES := \
-	lineage_vili-user \
-	lineage_vili-userdebug \
-	lineage_vili-eng
+	infinity_vili-user \
+	infinity_vili-userdebug \
+	infinity_vili-eng

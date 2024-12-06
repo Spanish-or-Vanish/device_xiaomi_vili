@@ -12,13 +12,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/vili/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 2107113SG
-PRODUCT_NAME := lineage_vili
+PRODUCT_NAME := infinity_vili
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -29,3 +29,15 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=vili \
     SystemDevice=vili \
     SystemName=vili
+
+# Maintainer Name
+INFINITY_MAINTAINER := swiitchOFF
+
+# OFFICIAL Maintainer
+INFINITY_BUILD_TYPE := OFFICIAL
+
+# Gapps:
+WITH_GAPPS := true
+
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
