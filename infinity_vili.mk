@@ -41,3 +41,6 @@ WITH_GAPPS := true
 
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
+
+# Whether the package supports BLURS
+TARGET_SUPPORTS_BLUR := true
