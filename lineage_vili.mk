@@ -29,3 +29,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=vili \
     SystemDevice=vili \
     SystemName=vili
+
+# Rom Specific Flags
+WITH_GMS := true
+TARGET_INCLUDE_NEXUS := true
