@@ -55,6 +55,3 @@ SOONG_CONFIG_xiaomiSm8350Vars_vibrator_use_effect_stream := true
 
 # Include proprietary files
 include vendor/xiaomi/vili/BoardConfigVendor.mk
-
-# Inherit from proprietary files for camera
--include vendor/xiaomi/miuicamera-lisa/BoardConfig.mk

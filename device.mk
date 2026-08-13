@@ -23,7 +23,11 @@ PRODUCT_PACKAGES += \
 
 # Camera
 $(call soong_config_set_bool,camera,override_format_from_reserved,true)
-$(call inherit-product-if-exists, vendor/xiaomi/miuicamera-lisa/device.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.miui.notch=1 \
+    ro.product.mod_device=vili_global
 
 # Init
 PRODUCT_PACKAGES += \
