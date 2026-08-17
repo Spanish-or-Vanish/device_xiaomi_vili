@@ -791,35 +791,6 @@ vendor/etc/sensors/hals.conf
 vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/sns_reg_config
 
-# Thermal configs
-vendor/etc/thermald-devices.conf|8534208980e8c38b32d0abf391ee6171
-vendor/etc/thermal-engine.conf|f24854923f7aa9793a3d21a500db09b2
-vendor/etc/thermal-map.conf|748695e8f5b189ad953a7e03c15779a4
-vendor/etc/thermal-map-india.conf|9dc1c8f79dcb6f4033097a6915e63d00
-vendor/etc/thermal-region-map.conf|2385a9de9c7eff3eb479eb63b95a9df5
-
-# Thermal configs - (modified)
-vendor/etc/thermal-camera.conf|47ac621e5130c4f8febac96a297df229
-vendor/etc/thermal-class0.conf|b45a62b3a0f04adddc80b18e96a00521
-vendor/etc/thermal-huanji.conf|5b268dd74103c33e9f2a46d053e46234
-vendor/etc/thermal-india-camera.conf|45d740f09f76b16f196c4380d852c67c
-vendor/etc/thermal-india-class0.conf|78b9186c160f8fc3fca952f8b6e64af1 
-vendor/etc/thermal-india-huanji.conf|07c474faff7a54311c4f8fdac516ddca
-vendor/etc/thermal-india-mgame.conf|a70d623d874e22208f42f2776aae1eca
-vendor/etc/thermal-india-navigation.conf|5ace44683cca26ebf79873b2dcda4c2b
-vendor/etc/thermal-india-nolimits.conf|fc286d74a6f12d92f0a6386bc8f32254
-vendor/etc/thermal-india-normal.conf|8d7918bbebcdb9befd4a2b91821c64a5
-vendor/etc/thermal-india-phone.conf|572ec97d0d899a1bb9632e79b0ac68cc
-vendor/etc/thermal-india-tgame.conf|b94bb1d3cd4e5a7c779151bdce456845
-vendor/etc/thermal-india-video.conf|57d421db0ec59a4fd0bb00334f03f82a
-vendor/etc/thermal-mgame.conf|59b0fdd1e4961925aa06a4c86c046bce
-vendor/etc/thermal-navigation.conf|60979fca756c7ae307bd1918fdf2c7ae
-vendor/etc/thermal-nolimits.conf|ee49d0d150bc78bf68fad146f9906e98
-vendor/etc/thermal-normal.conf|6b9ac01f90502e9f6ce8aa908ac1103e
-vendor/etc/thermal-phone.conf|8d0bfd57ff7516bcbf5ab2e70f800604
-vendor/etc/thermal-tgame.conf|4b574309180bedd14e12d07ffe3acb32
-vendor/etc/thermal-video.conf|788eb54397fe81f85d7d02915be70523
-
 # Touchscreen firmware
 vendor/firmware/st_fts_k3s.ftb
 vendor/firmware/st_fts_k3s.ftb:vendor_ramdisk/lib/firmware/st_fts_k3s.ftb

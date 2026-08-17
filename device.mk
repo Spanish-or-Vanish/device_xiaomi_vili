@@ -50,5 +50,34 @@ PRODUCT_SOONG_NAMESPACES += \
 # Swiitchoff stuffs
 $(call inherit-product-if-exists, swiitchoff/stuffs/config.mk)
 
+# Thermal configs modified
+# Unlocked 2.84 GHz in prime core
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-class0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-class0.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-huanji.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-huanji.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-india-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-india-camera.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-india-class0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-india-class0.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-india-huanji.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-india-huanji.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-india-mgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-india-mgame.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-india-navigation.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-india-navigation.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-india-nolimits.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-india-nolimits.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-india-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-india-normal.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-india-phone.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-india-phone.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-india-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-india-tgame.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-india-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-india-video.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-map-india.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map-india.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-mgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-mgame.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-navigation.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-navigation.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-nolimits.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-nolimits.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-normal.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-phone.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-phone.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-region-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-region-map.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-tgame.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermal-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-video.conf \
+    $(LOCAL_PATH)/configs/thermal/custom/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/vili/vili-vendor.mk)
