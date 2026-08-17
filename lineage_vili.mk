@@ -33,4 +33,5 @@ TARGET_INCLUDES_ViperFX := true
 TARGET_INCLUDES_OEM_App := true
 TARGET_INCLUDES_DolbyVision := true
 TARGET_INCLUDES_SWDOLBY := true
+TARGET_INCLUDES_Custom_Thermal := true
 
