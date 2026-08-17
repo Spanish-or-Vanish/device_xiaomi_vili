@@ -52,6 +52,7 @@ $(call inherit-product-if-exists, swiitchoff/stuffs/config.mk)
 
 # Thermal configs modified
 # Unlocked 2.84 GHz in prime core
+ifeq ($(TARGET_INCLUDES_Custom_Thermal),true)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal/custom/thermal-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera.conf \
     $(LOCAL_PATH)/configs/thermal/custom/thermal-class0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-class0.conf \
@@ -78,6 +79,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal/custom/thermal-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-tgame.conf \
     $(LOCAL_PATH)/configs/thermal/custom/thermal-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-video.conf \
     $(LOCAL_PATH)/configs/thermal/custom/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf
+else
 
 # Thermal configs stock
 # Locked 2.15 GHz in prime core
@@ -107,6 +109,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal/stock/thermal-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-tgame.conf \
     $(LOCAL_PATH)/configs/thermal/stock/thermal-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-video.conf \
     $(LOCAL_PATH)/configs/thermal/stock/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf
+endif
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/vili/vili-vendor.mk)
