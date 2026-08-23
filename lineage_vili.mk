@@ -37,4 +37,5 @@ TARGET_INCLUDES_Custom_Thermal := true
 TARGET_INCLUDES_HIGH_TOUCH_POLLING := true
 TARGET_INCLUDES_Lineage_Health := true
 TARGET_INCLUDES_Torch_Light_Control := true
+TARGET_INCLUDES_Webcam := true
 
