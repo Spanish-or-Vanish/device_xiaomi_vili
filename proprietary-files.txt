@@ -95,30 +95,6 @@ vendor/firmware/spk1_voice_delta.txt
 vendor/firmware/spk2_playback_delta.txt
 vendor/firmware/spk2_voice_delta.txt
 
-# Audio HAL
-vendor/lib/hw/audio.primary.lahaina.so
-vendor/lib/liba2dpoffload.so
-vendor/lib/libadm.so
-vendor/lib/libaudiocloudctrl.so
-vendor/lib/libaudioconfigstore.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libaudioparsers.so
-vendor/lib/libaudioroute_ext.so
-vendor/lib/libbatterylistener.so
-vendor/lib/libcomprcapture.so
-vendor/lib/libexthwplugin.so
-vendor/lib/libhdmiedid.so
-vendor/lib/libhdmipassthru.so
-vendor/lib/libhfp.so
-vendor/lib/libmmhardware.so
-vendor/lib/libqtigef.so
-vendor/lib/libresampler.so
-vendor/lib/libsndmonitor.so
-vendor/lib/libspkrprot.so
-vendor/lib/libssrec.so
-vendor/lib/libvideoNS.so;DISABLE_CHECKELF
-vendor/lib/vndk/libxlog.so
-
 # Camera
 vendor/lib64/HDR10plus.so
 vendor/lib64/camera/com.qti.eeprom.vili_ofilm_ov16a1q_bl24sa64_front_eeprom.so
@@ -714,14 +690,6 @@ vendor/lib64/sensors.elliptic@2.0.so
 vendor/lib64/sensors.mius.proximity.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/sensors.touch.detect.so
-
-# Sensors (citsensor)
-vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
-vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.citsensorservice@1.1-service.xml
-vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
-vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
 
 # Sensor Configs
 vendor/etc/sensors/config/ak991x_dri_0.json
